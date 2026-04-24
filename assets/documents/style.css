@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #2a3233;
+    color: #fff;
+}
+.welocome{
+    background-color: #ccd5d6;
+    display: block;
+    text-align: center;
+    color: #000000;
+    padding: 30px;
+    margin: 60px;
+    border-radius: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+hr{
+    border: 0;
+    border-top: 3px dotted #ff0000 ;
+    width: 80%;
+    margin: 2rem auto;
+}
+.quote{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.welocome button{
+    padding: 10px 25px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: #2a3233;
+    color: #fff;
+    box-shadow: 0 0 10px #000000;
+}
+nav, .nav-links{
+    display: flex;
+}
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 18vh;
+}
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+a{
+    color: #fff;
+    text-decoration-line:none ;
+    transition: .5s;
+}
+a:hover{
+    color: #7CF03D;
+}
+.logo{
+    display: block;
+}
+.logo-png{
+    position: relative;
+    right: 20px;
+    height: 100px;
+    width: 100px;
+    animation: rotate-logo 5s linear infinite;
+}
+@keyframes rotate-logo {
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+/*hambarger manu*/
+#ham-nav{
+    display: none;
+}
+.ham-menu{
+    position: relative;
+    left: 20px;
+}
+.ham-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px; 
+    cursor: pointer;
+}
+.ham-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: #1f242d;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden; 
+    transition: all 0.3 ease-in-out;
+}
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: .5cm;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+.menu-Links a:hover{
+    color: #7CF03D;
+    text-decoration: wavy;
+    text-decoration-color: #7CF03D;
+}
+
+.menu-links li{
+    list-style: none;
+}
+
+.menu-links.open{
+    max-height: 300px;
+}
+/*ham-menu for hand devices(style)*/
+.ham-icon.open span:first-child {
+ opacity: 0;
+ }
+
+.ham-icon.open span:nth-child(2) {
+ opacity: 1;
+ transform: rotate(45deg) translate(6px, -5px);
+ }
+ 
+.ham-icon.open span:last-child {
+ transform: rotate(-45deg) translate(10px, -5px);
+ }
+
+
+.ham-icon.open span:first-child{
+    transform: none;
+}
+
+.ham-icon.open span:first-child{
+    opacity: 0;
+}
+
+.ham-icon.open span:first-child{
+    transform: none;
+}
+.about{
+    background-color: #ccd5d6;
+    display: block;
+    text-align: center;
+    color: #000000;
+    padding: 30px;
+    margin: 60px;
+    border-radius: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*  */
+.list{
+    list-style: none;
+    font-size: 30px;
+    font-family: cursive;
+}
+.list a{
+    color: #000000;
+    transition: 1s;
+}
+.list a:hover{
+    color: #0073ff;
+}
+.intro{
+    display: flex;
+    text-align: center;
+    padding: 30px;
+    margin: 60px;
+    border-radius: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 50px;
+}
+.intro img{
+    height: 500px;
+    width: 500px;
+    border-radius: 30px;
+}
+.intro-info{
+    height: 500px;
+    width: 700px;
+    background-color: #ccd5d6;
+    border-radius: 30px;
+}
+.about-container{
+    display: flex;
+}
+.pic-container{
+    display: block;
+}
+.pic-container img{
+    height: 600px;
+    width: 500px;
+    border-radius: 45px;
+    padding: 20px;
+}
+.detailes-container{
+    display: block;
+    background-color: #ccd5d6;
+    display: block;
+    text-align: center;
+    color: #000000;
+    border-radius: 25px;
+    margin-top: 15px;
+    height: 500px;
+    width: 400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.detailes-container h1{
+    margin-top: 20px;
+}
