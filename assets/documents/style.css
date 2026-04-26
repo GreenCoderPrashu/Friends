@@ -9,7 +9,7 @@ body{
     background-color: #2a3233;
     color: #fff;
 }
-.welocome{
+.welcome{
     background-color: #ccd5d6;
     display: block;
     text-align: center;
@@ -28,7 +28,7 @@ hr{
 .quote{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.welocome button{
+.welcome button{
     padding: 10px 25px;
     margin-top: 20px;
     border-radius: 15px;
